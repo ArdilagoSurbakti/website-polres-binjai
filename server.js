@@ -5,8 +5,8 @@ const web = require('./route/web.js');
 const init = async () => {
   const server = Hapi.server({
     port: 3000,
-    // host: 'localhost'
-    host:"172.20.10.2"
+    host: 'localhost'
+    // host:"172.20.10.2"
   });
   await server.register(Inert);
 
